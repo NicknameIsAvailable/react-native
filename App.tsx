@@ -1,13 +1,16 @@
 import { PaperProvider } from 'react-native-paper';
 import Main from './Main';
 import RootLayout from './_layout';
+import { TaskProvider } from './provider/TaskProvider';
 
 export default function App() {
   return (
     <PaperProvider>
-      <RootLayout>
-        <Main/>
-      </RootLayout>
+      <TaskProvider>
+        <RootLayout>
+          <Main/>
+        </RootLayout>
+      </TaskProvider>
     </PaperProvider>
   );
 }

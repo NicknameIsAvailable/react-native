@@ -1,13 +1,13 @@
 import React from 'react';
 import { Appbar, Avatar } from 'react-native-paper';
+import AddTask from '../tasks/AddTask';
 
 const NavBar = () => {
     return (
         <Appbar.Header>
             <Appbar.BackAction onPress={() => {}} />
             <Appbar.Content title="Best app" />
-            <Appbar.Action icon="calendar" onPress={() => {}} />
-            <Appbar.Action icon="magnify" onPress={() => {}} />
+            <AddTask/>
         </Appbar.Header>
     );
 };
